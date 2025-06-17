@@ -89,3 +89,37 @@ variable "list_of_tuples" {
     ["beta", 2]
   ]
 }
+
+#Set of strings
+variable "set_strings" {
+  type = set(string)
+  default = [ "Cat", "Dog", "Dog" ] #It wont save Dog twice
+}
+
+#Map of strings
+variable "map_ex" {
+  type = map(string)
+  default = {
+    "name" = "Shri"
+    "lastname" = "Kopare"
+  }
+}
+
+#Tuple
+variable "tuple_ex" {
+  type = tuple([ string, number ])
+  default = [ "Start", 100 ]
+}
+
+#Object
+variable "obj_ex" {
+  type = object({
+    name = string
+    phone_number = number
+  })
+
+  default = {
+    name = "Shrinath"
+    phone_number = 9876543210
+  }
+}
