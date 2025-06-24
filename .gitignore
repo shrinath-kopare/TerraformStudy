@@ -35,3 +35,4 @@
 EC2LoginAutomation/tf-cloud-init
 GCPDemos/InstanceCreateDemo/test1.km
 learn-terraform-aws-instance/main.tf
+**/id_rsa
